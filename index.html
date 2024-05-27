@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
-		<meta charset="utf-8">
 		<title>Cafeteria Manhattan</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, inital-scale=1.0">
 		<link rel="stylesheet" href="style.css">
+		<!-- Importando fontes -->
+		<link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Lato&family=Merriweather&family=Oswald&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
 	</head>
 	<body>
 		<!-- Topo -->
-		<div id="top" class="container container-top">
+		<div id="top" class="container-top">
 			<img src="img/logo.png" alt="logo">
-			<div class="link-top">
+			<div class="box-links">
 				<a href="#info">INFORMAÇÕES</a>
 				<a href="#contact">CONTATOS</a>
 				<a href="#hours">HORÁRIOS</a>
@@ -18,7 +24,7 @@
 		</div>
 
 		<!-- Banner -->
-		<div class="container-banner">
+		<div id="banner" class="container-parallax1">
 			<h1>MANHATTAN - COFFEE HOUSE</h1>
 		</div>
 		
@@ -40,8 +46,8 @@ todos nós, café é coisa séria e merece todo o cuidado.
 				</p>
 			</div>
 
-			<!-- Container imagem parallax 1 -->
-			<div class="container-parallax-1">
+			<!-- Container imagem parallax 2 -->
+			<div class="container-parallax2">
 				<h3>Um bom café é motivo de alegria!</h3>
 			</div>
 
@@ -63,8 +69,8 @@ café.
 				</p>
 			</div>
 
-			<!-- Container imagem parallax 2 -->
-			<div class="container-parallax-2">
+			<!-- Container imagem parallax 3 -->
+			<div class="container-parallax3">
 				<h3>A vida só começa depois do café!</h3>
 			</div>
 
@@ -85,9 +91,17 @@ vai depender da torra, quanto mais clara ela for, maior será a acidez.
 			</div>
 
 		<!-- Contatos e Endereço -->
-		<div id="contact" class="container-contact">
+		<div id="contact" class="container-parallax4">
 			<h2>Contatos & Endereço</h2>
-			<iframe></iframe>
+			<iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.116814396121!2d-43.36308168443389!3d-22.982731546364604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bda2ed54ec2e1%3A0x4431d262cad1d163!2sAv.%20Ayrton%20Senna%2C%203000%20-%20Barra%20da%20Tijuca%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2022775-904!5e0!3m2!1spt-BR!2sbr!4v1673618057703!5m2!1spt-BR!2sbr"
+        width="1024"
+        height="500"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
 			<div class="box-contatos">
 				<p>Telefone & Whatsapp: (21) 99999-5555</p>
 				<p>E-mail: contato@manhattan.com.br</p>
@@ -96,36 +110,43 @@ vai depender da torra, quanto mais clara ela for, maior será a acidez.
 		</div>
 
 		<!-- Horários-->
-		<div id="hours" class="container-hours">
+		<div id="hours" class="container-parallax5">
 			<h2>HORÁRIOS DE FUNCIONAMENTO</h2>
-			<ul type="none">
+			<ul class="list" type="none">
 				<li>
 					<h3>SEGUNDA</h3>
-					<span>FECHADO</span>
+					<div></div>
+					<p><span>FECHADO</span></p>
 				</li>
 				<li>
 					<h3>TERÇA</h3>
-					<span>09:00 - 22:00</span>
+					<div></div>
+					<p>09:00 - 22:00</p>
 				</li>
 				<li>
 					<h3>QUARTA</h3>
-					<span>09:00 - 22:00</span>
+					<div></div>
+					<p>09:00 - 22:00</p>
 				</li>
 				<li>
 					<h3>QUINTA</h3>
-					<span>09:00 - 22:00</span>
+					<div></div>
+					<p>09:00 - 22:00</p>
 				</li>
 				<li>
 					<h3>SEXTA</h3>
-					<span>09:00 - 22:00</span>					
+					<div></div>
+					<p>09:00 - 22:00</p>					
 				</li>
 				<li>
 					<h3>SÁBADO</h3>
-					<span>09:00 - 22:00</span>
+					<div></div>
+					<p>09:00 - 22:00</p>
 				</li>
 				<li>
 					<h3>DOMINGO</h3>
-					<span>12:00 - 22:00</span>
+					<div></div>
+					<p>12:00 - 22:00</p>
 				</li>
 			</ul>
 		</div>
@@ -133,8 +154,8 @@ vai depender da torra, quanto mais clara ela for, maior será a acidez.
 		<!-- Rodapé -->
 		<div class="container-rodape">
 			<p>&copy; Manhattan - Coffee House - Todos os direitos reservados</p>
-			<p>Desenvolvido por Ana Luiza Migliavacca Guglielmini</p>
-			<a href="#top">
+			<p>Desenvolvido por <span class="destaque">Ana Luiza Migliavacca Guglielmini</span></p>
+			<a href="#banner">
 				<img src="img/seta-para-cima.png">
 			</a>
 		</div>
